@@ -1,0 +1,24 @@
+{
+    "name": "gia/gsdd",
+    "description": "Support to your Spec-Driven Development sessions in your own Laravel app.",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Gia\\Gsdd\\": "src/"
+        }
+    },
+    "extra":{
+        "laravel":{
+            "providers": [
+                "Gia\\Gsdd\\GsddServiceProvider"
+            ]
+        }
+    },
+    "authors": [
+        {
+            "name": "Gia"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
