@@ -22,16 +22,16 @@ class GsddServiceProvider extends ServiceProvider
     {
         //cosa viene fatto col publish
         $this->publishes([
-            __DIR__.'../templates/TEMPLATE_BUGFIX.md' => config_path('specs/bugfix.md')
+            __DIR__.'../../templates/TEMPLATE_BUGFIX.md' => config_path('specs/bugfix.md')
             #rivedere "config_path"
         ], 'gsdd-bugfix');
 
         $this->publishes([
-            __DIR__.'../templates/TEMPLATE_FEATURE.md' => config_path('specs/feature.md')
+            __DIR__.'../../templates/TEMPLATE_FEATURE.md' => config_path('specs/feature.md')
         ], 'gsdd-feature');
 
         $this->publishes([
-            __DIR__.'../templates/TEMPLATE_REFACTORING.md' => config_path('specs/refactoring.md')
+            __DIR__.'../../templates/TEMPLATE_REFACTORING.md' => config_path('specs/refactoring.md')
         ], 'gsdd-refactoring');
     }
 }
