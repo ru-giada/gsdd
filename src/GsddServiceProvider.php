@@ -21,6 +21,17 @@ class GsddServiceProvider extends ServiceProvider
     public function boot(): void
     {
         //cosa viene fatto col publish
-        dd("Funziono!! :D");
+        $this->publishes([
+            __DIR__.'../templates/TEMPLATE_BUGFIX.md' => config_path('specs/bugfix.md')
+            #rivedere "config_path"
+        ], 'gsdd-bugfix');
+
+        $this->publishes([
+            __DIR__.'../templates/TEMPLATE_FEATURE.md' => config_path('specs/feature.md')
+        ], 'gsdd-feature');
+
+        $this->publishes([
+            __DIR__.'../templates/TEMPLATE_REFACTORING.md' => config_path('specs/refactoring.md')
+        ], 'gsdd-refactoring');
     }
 }
